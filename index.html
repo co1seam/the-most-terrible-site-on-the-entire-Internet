@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>САМЫЙ ПОТРЯСАЮЩИЙ САЙТ 2024!!!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Papyrus&display=swap');
+        
+        /* Основные стили */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff00ff, #00ff00, #0000ff, #ff0000);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite, stars 2s linear infinite;
+            font-family: 'Comic Sans MS', cursive;
+            overflow-x: hidden;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><text y="20" font-size="20">🌈</text></svg>'), auto;
+            transform: skew(3deg, 2deg); /* Перекос всей страницы */
+            filter: hue-rotate(0deg);
+            animation: hueSpin 3s linear infinite, gradient 5s ease infinite, stars 2s linear infinite;
+        }
+
+        /* Анимация HUE поворота для всей страницы */
+        @keyframes hueSpin {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+
+        /* Стиль для текста наоборот */
+        .reverse-text {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        /* Рваный текст */
+        .shredded-text {
+            display: inline-block;
+            transform: skewX(-15deg) rotate(2deg);
+            font-family: 'Wingdings', cursive;
+            letter-spacing: -2px;
+        }
+
+        /* Токсичные всплывающие сообщения */
+        .toxic-message {
+            position: fixed;
+            background-color: #ff5500;
+            color: white;
+            border: 3px solid yellow;
+            padding: 15px;
+            border-radius: 10px;
+            z-index: 9999;
+            font-size: 24px;
+            box-shadow: 0 0 15px red;
+            transition: none;
+            animation: shake 0.2s infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(5px, 5px) rotate(5deg); }
+            50% { transform: translate(0, 0) rotate(0deg); }
+            75% { transform: translate(-5px, 5px) rotate(-5deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+
+        /* Убегающие элементы */
+        .runaway-button {
+            position: relative;
+            transition: all 0.1s ease-out;
+        }
+
+        /* Фальшивая система ошибок */
+        .fake-error {
+            position: fixed;
+            background-color: #fff;
+            border: 2px solid #888;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+            padding: 10px;
+            z-index: 1000;
+            font-family: 'Arial', sans-serif;
+            width: 300px;
+            color: black;
+        }
+
+        .fake-error-title {
+            background-color: #00f;
+            color: white;
+            padding: 5px;
+            margin: -10px -10px 10px -10px;
+            font-weight: bold;
+        }
+
+        .fake-error-x {
+            float: right;
+            cursor: pointer;
+        }
+
+        /* "Вирусное" сообщение */
+        .virus-alert {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            color: white;
+            padding: 20px;
+            border: 5px solid black;
+            z-index: 10000;
+            font-size: 24px;
+            text-align: center;
+            animation: pulse 0.5s infinite alternate;
+            display: none;
+        }
+
+        /* Элементы с крутящимся текстом */
+        .rotating-text {
+            display: inline-block;
+            animation: textRotate 3s linear infinite;
+            transform-origin: center;
+        }
+
+        @keyframes textRotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Случайно движущиеся элементы */
+        .random-mover {
+            transition: transform 0.5s ease-out;
+        }
+
+        /* Радужное выделение текста */
+        ::selection {
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            color: white;
+        }
+
+        /* Все остальные существующие стили */
+        /* Облака 90-х */
+        .clouds {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://media.giphy.com/media/gH1jGsCnQBiFHWMFzh/giphy.gif');
+            background-size: cover;
+            opacity: 0.5;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Заголовки */
+        h1, h2, h3 {
+            font-family: 'Papyrus', fantasy;
+            color: #ff0000;
+            text-shadow: -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000, 3px 3px 0 #000, 5px 5px 0 #ffff00;
+            text-align: center;
+            animation: pulse 2s infinite;
+        }
+
+        /* Анимация пульсации */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Основной текст */
+        p {
+            font-size: 18px;
+            color: yellow;
+            background-color: pink;
+            padding: 10px;
+            border-radius: 15px;
+            text-shadow: 2px 2px blue;
+            animation: textColor 3s infinite;
+        }
+
+        /* Мигающий текст */
+        .blink {
+            animation: blink 1s steps(2, start) infinite;
+        }
+
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+
+        /* Цвета текста */
+        @keyframes textColor {
+            0% { color: yellow; }
+            25% { color: lime; }
+            50% { color: cyan; }
+            75% { color: magenta; }
+            100% { color: yellow; }
+        }
+
+        /* Бегущая строка */
+        .marquee {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .marquee span {
+            display: inline-block;
+            animation: marquee 15s linear infinite, wave 2s ease-in-out infinite;
+            font-size: 24px;
+            color: #ff0;
+            font-weight: bold;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100vw); }
+            100% { transform: translateX(-100%); }
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: translateY(0px) translateX(0); }
+            25% { transform: translateY(-15px) translateX(0); }
+            50% { transform: translateY(0px) translateX(0); }
+            75% { transform: translateY(15px) translateX(0); }
+        }
+
+        /* Меню-карусель */
+        .menu-container {
+            height: 150px;
+            perspective: 500px;
+            margin: 50px auto;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            animation: rotate 20s infinite linear;
+        }
+
+        .carousel-item {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.7);
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            transition: all 0.3s;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+
+        .carousel-item:hover {
+            transform: scale(2);
+            color: white;
+            background-color: black;
+            z-index: 999;
+        }
+
+        @keyframes rotate {
+            from { transform: rotateY(0); }
+            to { transform: rotateY(360deg); }
+        }
+
+        /* Вращающиеся смайлы */
+        .emoji {
+            position: fixed;
+            font-size: 50px;
+            animation: spin 5s linear infinite;
+            filter: drop-shadow(5px 5px 0 black);
+            z-index: 999;
+        }
+
+        #emoji1 { top: 20px; left: 20px; }
+        #emoji2 { top: 20px; right: 20px; }
+        #emoji3 { bottom: 20px; left: 20px; }
+        #emoji4 { bottom: 20px; right: 20px; }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Поисковая строка-лабиринт */
+        .search-container {
+            position: relative;
+            width: 80%;
+            height: 100px;
+            margin: 20px auto;
+            background-color: #333;
+            border-radius: 10px;
+        }
+
+        .search-maze {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            background-color: #666;
+            border-radius: 5px;
+        }
+
+        .maze-wall {
+            position: absolute;
+            background-color: red;
+            z-index: 10;
+        }
+
+        .search-input {
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            width: 60px;
+            height: 20px;
+        }
+
+        .search-button {
+            position: absolute;
+            right: 20px;
+            top: 40px;
+            width: 60px;
+            height: 30px;
+            background: linear-gradient(to right, red, yellow);
+            border: none;
+            border-radius: 5px;
+            color: blue;
+            font-weight: bold;
+            cursor: pointer;
+            animation: buttonPulse 2s infinite;
+        }
+
+        @keyframes buttonPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        /* Видео */
+        .video-container {
+            position: fixed;
+            width: 150px;
+            height: 100px;
+            z-index: 5;
+        }
+
+        #video1 { top: 120px; left: 10px; }
+        #video2 { top: 120px; right: 10px; }
+        #video3 { bottom: 120px; left: 10px; }
+        #video4 { bottom: 120px; right: 10px; }
+
+        /* Поп-ап */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background: linear-gradient(to right, orange, purple);
+            border: 5px solid lime;
+            border-radius: 20px;
+            padding: 20px;
+            z-index: 1000;
+            box-shadow: 0 0 30px gold;
+            text-align: center;
+        }
+
+        .popup-content {
+            color: white;
+            font-size: 24px;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .popup button {
+            background-color: yellow;
+            color: red;
+            border: 3px solid blue;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .captcha {
+            margin-top: 10px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Формы */
+        .form-container {
+            background-color: #003366;
+            border: 5px dashed yellow;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+
+        .form-field {
+            margin-bottom: 15px;
+        }
+
+        .form-field label {
+            display: block;
+            color: #ffcc00;
+            margin-bottom: 5px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .form-field input, .form-field select {
+            width: 100%;
+            padding: 10px;
+            border: 3px solid lime;
+            border-radius: 10px;
+            background-color: lavender;
+            color: purple;
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .age-slider {
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-appearance: none;
+        }
+
+        .age-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 30px;
+            height: 30px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">😂</text></svg>');
+            cursor: pointer;
+        }
+
+        .captcha-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .captcha-images img {
+            width: 80px;
+            height: 80px;
+            filter: blur(3px);
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .captcha-images img.selected {
+            border: 2px solid red;
+        }
+
+        /* Содержимое сайта */
+        .content {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Блестки при наведении */
+        .content *:hover::after {
+            content: '✨';
+            position: absolute;
+            animation: glitter 1s infinite;
+            font-size: 24px;
+            pointer-events: none;
+        }
+
+        @keyframes glitter {
+            0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            100% { transform: translate(20px, 20px) rotate(180deg); opacity: 0; }
+        }
+
+        /* Плавающие элементы */
+        .floating {
+            position: absolute;
+            animation: float 15s infinite linear;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(100px, 50px); }
+            50% { transform: translate(50px, 100px); }
+            75% { transform: translate(-50px, 50px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Звездный фон */
+        @keyframes stars {
+            0% { opacity: 0.5; }
+            50% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+
+        /* Мобильные стили */
+        @media (max-width: 768px) {
+            body {
+                transform: scale(0.2) rotate(90deg);
+                width: 500%;
+                overflow-x: scroll;
+            }
+            
+            /* Усиленная кнопка вызова */
+            .call-button {
+                position: fixed;
+                bottom: 10px;
+                left: 10%;
+                width: 80%;
+                height: 100px;
+                background: linear-gradient(to right, red, blue);
+                color: yellow;
+                font-size: 36px;
+                font-weight: bold;
+                text-align: center;
+                line-height: 100px;
+                border-radius: 20px;
+                border: 5px solid lime;
+                animation: blink 0.2s infinite, moveRandomly 2s infinite;
+                z-index: 1000;
+            }
+            
+            .currency-table {
+                width: 100%;
+                overflow-x: auto;
+                margin: 20px 0;
+            }
+            
+            .currency-table img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="seizure-wrapper">
+    <!-- Двойной курсор -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+    
+    <!-- Панель с сообщением о "вирусе" -->
+    <div class="virus-alert" id="virus-alert">
+        <h3 class="electric-text">⚠️ ВНИМАНИЕ! ОБНАРУЖЕН ВИРУС! ⚠️</h3>
+        <p>На вашем устройстве обнаружено 13 вирусов!</p>
+        <p>Нажмите "ОК" для немедленной очистки системы.</p>
+        <button onclick="closeVirusAlert(); showMoreViruses();" style="padding: 10px 20px; background: green; color: white; border: none; cursor: pointer;">OK</button>
+    </div>
+    
+    <!-- Глюки экрана -->
+    <div class="glitch-overlay" id="glitch-overlay"></div>
+
+    <!-- Облака 90-х -->
+    <div class="clouds"></div>
+    
+    <!-- Вращающиеся смайлы -->
+    <div class="emoji" id="emoji1">😂</div>
+    <div class="emoji" id="emoji2">🔥</div>
+    <div class="emoji" id="emoji3">💯</div>
+    <div class="emoji" id="emoji4">👽</div>
+    
+    <!-- Бегущая строка с вращающимся текстом -->
+    <div class="marquee">
+        <span><span class="rotating-text">🔄</span> ДОБРО ПОЖАЛОВАТЬ НА <span class="electric-text">САМЫЙ</span> КРУТОЙ САЙТ 2024!!!1! <span class="shredded-text">ЗАХОДИТЕ</span> ЕЩЕ <span class="reverse-text">И ПРИВОДИТЕ ДРУЗЕЙ</span> <span class="rotating-text">🔄</span></span>
+    </div>
+    
+    <!-- Меню-карусель -->
+    <div class="menu-container">
+        <div class="carousel">
+            <!-- Пункты меню будут добавлены с помощью JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Поисковая строка-лабиринт с усложнением -->
+    <div class="search-container">
+        <div class="search-maze">
+            <!-- Стены лабиринта будут добавлены с помощью JavaScript -->
+        </div>
+        <input type="text" class="search-input warped-input" placeholder="Поиск...">
+        <button class="search-button runaway-button">Искать!</button>
+    </div>
+    
+    <!-- Основной контент -->
+    <div class="content">
+        <h1>МОЙ <span class="rotating-text">СУПЕР</span>-МЕГА САЙТ</h1>
+        <p>Добро пожаловать на <span class="blink">САМЫЙ ЛУЧШИЙ</span> сайт в интернете! Здесь вы найдете всё, что только можно <span class="blink electric-text">ВООБРАЗИТЬ!</span></p>
+        
+        <h2>О <span class="reverse-text">НАС</span></h2>
+        <p>Мы - команда <span class="blink">ПРОФЕССИОНАЛОВ</span>, которая создает только <span class="blink shredded-text">ШЕДЕВРЫ</span> веб-дизайна с 1999 года!</p>
+        
+        <!-- Улучшенная форма -->
+        <div class="form-container">
+            <h2>ПРИСОЕДИНЯЙТЕСЬ <span class="rotating-text">К НАМ!</span></h2>
+            <form id="awful-form">
+                <div class="form-field">
+                    <label class="electric-text">ВВЕДИТЕ ВАШЕ ИМЯ:</label>
+                    <input type="text" placeholder="Ваше имя здесь" class="warped-input" onkeydown="shuffleInputText(this)">
+                </div>
+                
+                <div class="form-field">
+                    <label class="electric-text">ПАРОЛЬ (3 ЭМОДЗИ + ЦИФРА МЕСЯЦА РОЖДЕНИЯ):</label>
+                    <input type="password" placeholder="😂🔥👽5" class="warped-input random-mover">
+                </div>
+                
+                <div class="form-field">
+                    <label class="electric-text">ВЫБЕРИТЕ ВАШ ВОЗРАСТ (-5 ДО 300 ЛЕТ):</label>
+                    <input type="range" min="-5" max="300" step="0.5" value="30" class="age-slider random-mover" id="age-slider">
+                    <div id="age-value" style="color: white; text-align: center; margin-top: 10px;">30</div>
+                </div>
+                
+                <div class="form-field">
+                    <label class="electric-text">CAPTCHA: ВЫБЕРИТЕ ВСЕ КАРТИНКИ С ЕНОТАМИ</label>
+                    <div class="captcha-images">
+                        <!-- Картинки для капчи будут добавлены с помощью JavaScript -->
+                    </div>
+                </div>
+                
+                <button type="submit" class="runaway-button" style="
+                    background: linear-gradient(45deg, red, blue);
+                    color: yellow;
+                    border: 5px solid lime;
+                    padding: 15px 30px;
+                    font-size: 24px;
+                    border-radius: 10px;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    animation: buttonPulse 1s infinite;
+                    width: 100%;
+                ">ОТПРАВИТЬ И ПОЛУЧИТЬ ПРИЗ!!!</button>
+            </form>
+        </div>
+        
+        <!-- Случайно перемещающиеся видео -->
+        <div class="video-container" id="video1">
+            <iframe width="150" height="100" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-container" id="video2">
+            <iframe width="150" height="100" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-container" id="video3">
+            <iframe width="150" height="100" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="video-container" id="video4">
+            <iframe width="150" height="100" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+    <!-- Поп-ап с призом -->
+    <div class="popup" id="prize-popup">
+        <div class="popup-content">
+            <h2>ВАШ ПРИЗ ЖДЕТ!</h2>
+            <p>Чтобы получить приз, решите эту капчу:</p>
+            <div class="captcha">
+                <img src="https://placekitten.com/200/100" alt="CAPTCHA">
+                <input type="text" placeholder="Введите китайские иероглифы...">
+            </div>
+            <button onclick="closePopup()">ПОЛУЧИТЬ ПРИЗ!</button>
+        </div>
+    </div>
+    
+    <!-- Для мобильной версии -->
+    <div class="call-button">ПОЗВОНИТЬ НАМ!</div>
+    
+    <div class="currency-table">
+        <img src="https://placehold.co/800x400/png?text=Курсы+валют+1999+года" alt="Курсы валют 1999 года">
+    </div>
+    
+    <!-- Плавающие элементы с дополнениями -->
+    <div class="floating" style="top: 200px; left: 300px; font-size: 30px;">💯</div>
+    <div class="floating" style="top: 400px; left: 100px; font-size: 40px;">🔥</div>
+    <div class="floating" style="top: 300px; left: 500px; font-size: 50px;">🌈</div>
+    <div class="floating rotating-text" style="top: 250px; left: 250px; font-size: 35px;">🤢</div>
+    <div class="floating rotating-text" style="top: 450px; left: 450px; font-size: 45px;">🤮</div>
+    
+    <script>
+        // Создание пунктов меню-карусели
+        const carousel = document.querySelector('.carousel');
+        const menuItems = [
+            'ГЛАВНАЯ', 'О НАС', 'УСЛУГИ', 'ЦЕНЫ', 'КОНТАКТЫ', 
+            'БЛОГ', 'АКЦИИ', 'ОТЗЫВЫ', 'ПАРТНЕРЫ', 'ВАКАНСИИ',
+            'FAQ', 'СКАЧАТЬ', 'ГАЛЕРЕЯ', 'КАРТА', 'ЧАТ'
+        ];
+        
+        menuItems.forEach((item, index) => {
+            const angle = (index / menuItems.length) * 2 * Math.PI;
+            const radius = 200;
+            const x = radius * Math.sin(angle);
+            const z = radius * Math.cos(angle);
+            
+            const menuItem = document.createElement('div');
+            menuItem.className = 'carousel-item';
+            menuItem.textContent = item;
+            menuItem.style.transform = `rotateY(${angle * 180 / Math.PI}deg) translateZ(${radius}px)`;
+            
+            // Добавляем звуковой эффект при наведении
+            menuItem.addEventListener('mouseenter', () => {
+                const audio = new Audio('https://www.soundjay.com/buttons/sounds/button-09.mp3');
+                audio.play();
+            });
+            
+            carousel.appendChild(menuItem);
+        });
+        
+        // Создание стен лабиринта для поисковой строки
+        const searchMaze = document.querySelector('.search-maze');
+        const walls = [
+            { top: '20px', left: '20px', width: '70%', height: '10px' },
+            { top: '20px', left: '20px', width: '10px', height: '60%' },
+            { top: '70px', left: '20px', width: '70%', height: '10px' },
+            { top: '20px', left: '90%', width: '10px', height: '60%' }
+        ];
+        
+        walls.forEach(wall => {
+            const mazeWall = document.createElement('div');
+            mazeWall.className = 'maze-wall';
+            Object.assign(mazeWall.style, wall);
+            searchMaze.appendChild(mazeWall);
+        });
+        
+        // Обработчик слайдера возраста
+        const ageSlider = document.getElementById('age-slider');
+        const ageValue = document.getElementById('age-value');
+        
+        ageSlider.addEventListener('input', () => {
+            ageValue.textContent = ageSlider.value;
+        });
+        
+        // Создание изображений для капчи
+        const captchaContainer = document.querySelector('.captcha-images');
+        for (let i = 0; i < 9; i++) {
+            const img = document.createElement('img');
+            img.src = `https://placehold.co/80x80/png?text=Тостер${i+1}`;
+            img.addEventListener('click', () => {
+                img.classList.toggle('selected');
+            });
+            captchaContainer.appendChild(img);
+        }
+        
+        // Поп-ап с призом
+        function showPopup() {
+            document.getElementById('prize-popup').style.display = 'block';
+        }
+        
+        function closePopup() {
+            document.getElementById('prize-popup').style.display = 'none';
+            setTimeout(showPopup, 10000); // Показываем снова через 10 секунд
+        }
+        
+        // Показываем поп-ап каждые 10 секунд
+        setTimeout(showPopup, 10000);
+        
+        // Обработка Konami Code
+        const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+        let konamiIndex = 0;
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === konamiCode[konamiIndex]) {
+                konamiIndex++;
+                
+                if (konamiIndex === konamiCode.length) {
+                    // Активация режима диско
+                    activateDiscoMode();
+                    konamiIndex = 0;
+                }
+            } else {
+                konamiIndex = 0;
+            }
+        });
+        
+        // Параллакс-эффект при скролле
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            document.querySelector('.clouds').style.transform = `translateY(${scrollY * 0.5}px)`;
+            document.body.style.backgroundPosition = `${scrollY * 0.2}px ${scrollY * 0.2}px`;
+        });
+        
+        // Взрывающиеся кнопки
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const originalButton = e.target;
+                const rect = originalButton.getBoundingClientRect();
+                
+                // Создаем эффект взрыва
+                for (let i = 0; i < 40; i++) {
+                    const particle = document.createElement('div');
+                    particle.style.position = 'absolute';
+                    particle.style.width = '10px';
+                    particle.style.height = '10px';
+                    particle.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+                    particle.style.top = `${rect.top + rect.height/2}px`;
+                    particle.style.left = `${rect.left + rect.width/2}px`;
+                    particle.style.borderRadius = '50%';
+                    particle.style.transition = 'all 1s';
+                    particle.style.zIndex = '1000';
+                    
+                    document.body.appendChild(particle);
+                    
+                    setTimeout(() => {
+                        const angle = Math.random() * Math.PI * 2;
+                        const distance = 50 + Math.random() * 100;
+                        particle.style.transform = `translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px)`;
+                        particle.style.opacity = '0';
+                    }, 10);
+                    
+                    setTimeout(() => {
+                        document.body.removeChild(particle);
+                    }, 1000);
+                }
+                
+                // Скрываем кнопку
+                originalButton.style.visibility = 'hidden';
+                
+                // Возвращаем кнопку через 5 секунд
+                setTimeout(() => {
+                    originalButton.style.visibility = 'visible';
+                }, 5000);
+                
+                e.preventDefault();
+            });
+        });
+        
+        // Авто-воспроизведение MIDI
+        const midiPlayer = document.createElement('audio');
+        midiPlayer.src = 'https://vgmsite.com/soundtracks/rick-astley-never-gonna-give-you-up/pezugpin/01%20-%20Never%20Gonna%20Give%20You%20Up.mp3';
+        midiPlayer.loop = true;
+        midiPlayer.volume = 0.5;
+        midiPlayer.autoplay = true;
+        document.body.appendChild(midiPlayer);
+        
+        // Добавляем блики курсора для всех элементов
+        document.addEventListener('mousemove', (e) => {
+            const glitter = document.createElement('div');
+            glitter.innerHTML = '✨';
+            glitter.style.position = 'absolute';
+            glitter.style.left = `${e.pageX}px`;
+            glitter.style.top = `${e.pageY}px`;
+            glitter.style.pointerEvents = 'none';
+            glitter.style.zIndex = '9999';
+            glitter.style.fontSize = '24px';
+            glitter.style.transition = 'all 1s';
+            
+            document.body.appendChild(glitter);
+            
+            setTimeout(() => {
+                glitter.style.transform = 'translate(20px, 20px) rotate(180deg)';
+                glitter.style.opacity = '0';
+            }, 10);
+            
+            setTimeout(() => {
+                document.body.removeChild(glitter);
+            }, 1000);
+        });
+
+        // Установка случайных интервалов для каждого элемента
+        function setRandomIntervals() {
+            const intervals = [];
+            
+            // Случайное изменение положения элементов с классом random-mover
+            intervals.push(setInterval(() => {
+                document.querySelectorAll('.random-mover').forEach(element => {
+                    const xMove = Math.random() * 40 - 20;
+                    const yMove = Math.random() * 40 - 20;
+                    element.style.transform = `translate(${xMove}px, ${yMove}px)`;
+                });
+            }, 1000));
+            
+            // Имитация багов и глюков
+            intervals.push(setInterval(() => {
+                const glitchOverlay = document.getElementById('glitch-overlay');
+                glitchOverlay.style.display = 'block';
+                glitchOverlay.style.backgroundColor = `rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.3)`;
+                
+                setTimeout(() => {
+                    glitchOverlay.style.display = 'none';
+                }, 200);
+            }, 3000));
+            
+            // Случайное создание фальшивых ошибок
+            intervals.push(setInterval(() => {
+                createFakeError();
+            }, 15000));
+            
+            // Токсичные сообщения
+            intervals.push(setInterval(() => {
+                showToxicMessage();
+            }, 8000));
+            
+            // Показать вирусное предупреждение
+            setTimeout(() => {
+                document.getElementById('virus-alert').style.display = 'block';
+            }, 20000);
+            
+            return intervals;
+        }
+        
+        // Функция для создания фальшивой ошибки
+        function createFakeError() {
+            const errorTypes = [
+                {title: 'Ошибка JavaScript', message: 'Необработанное исключение на строке 42: объект не определен'},
+                {title: 'Системная ошибка', message: 'Память не может быть "read" по адресу 0x00000000'},
+                {title: 'HTTP Error 500', message: 'Внутренняя ошибка сервера. Повторите попытку позже.'},
+                {title: 'Критическая ошибка', message: 'Процесс остановлен из-за ошибки в модуле'},
+                {title: 'Ошибка Internet Explorer', message: 'Для продолжения установите Internet Explorer 6'},
+            ];
+            
+            const error = errorTypes[Math.floor(Math.random() * errorTypes.length)];
+            const fakeError = document.createElement('div');
+            fakeError.className = 'fake-error';
+            fakeError.style.top = `${Math.random() * (window.innerHeight - 200)}px`;
+            fakeError.style.left = `${Math.random() * (window.innerWidth - 300)}px`;
+            
+            fakeError.innerHTML = `
+                <div class="fake-error-title">
+                    ${error.title}
+                    <span class="fake-error-x" onclick="this.parentNode.parentNode.remove()">✕</span>
+                </div>
+                <p>${error.message}</p>
+                <div style="text-align: center;">
+                    <button onclick="this.parentNode.parentNode.remove()">OK</button>
+                </div>
+            `;
+            
+            document.body.appendChild(fakeError);
+            
+            // Звуковой эффект ошибки
+            const errorSound = new Audio('https://www.soundjay.com/buttons/sounds/beep-5.mp3');
+            errorSound.play();
+        }
+        
+        // Функция для отображения токсичных сообщений
+        function showToxicMessage() {
+            const messages = [
+                'Вы действительно нажали на это? 🤦‍♂️',
+                'Ваш компьютер медленнее, чем у моей бабушки!',
+                'Уверены, что умеете пользоваться интернетом?',
+                'Ой, кажется, вы опять что-то сломали...',
+                'ЭТО НЕ ТА КНОПКА! 😠',
+                'Вау! Вы нашли самый бесполезный раздел сайта!',
+                'Пожалуйста, не трогайте ничего, все работало до вас!'
+            ];
+            
+            const message = messages[Math.floor(Math.random() * messages.length)];
+            const toxicMessage = document.createElement('div');
+            toxicMessage.className = 'toxic-message';
+            toxicMessage.textContent = message;
+            toxicMessage.style.top = `${Math.random() * (window.innerHeight - 100)}px`;
+            toxicMessage.style.left = `${Math.random() * (window.innerWidth - 300)}px`;
+            
+            document.body.appendChild(toxicMessage);
+            
+            // Удаление сообщения через 3 секунды
+            setTimeout(() => {
+                document.body.removeChild(toxicMessage);
+            }, 3000);
+        }
+        
+        // Функция для закрытия предупреждения о вирусе
+        function closeVirusAlert() {
+            document.getElementById('virus-alert').style.display = 'none';
+        }
+        
+        // Функция для показа большего количества вирусных предупреждений
+        function showMoreViruses() {
+            setTimeout(() => {
+                // Показываем еще больше фальшивых ошибок
+                for (let i = 0; i < 5; i++) {
+                    setTimeout(() => {
+                        createFakeError();
+                    }, i * 1000);
+                }
+            }, 2000);
+        }
+        
+        // Функция для перемешивания текста в полях ввода
+        function shuffleInputText(input) {
+            setTimeout(() => {
+                let text = input.value;
+                if (text.length > 3) {
+                    let chars = text.split('');
+                    for (let i = 0; i < chars.length; i++) {
+                        const j = Math.floor(Math.random() * chars.length);
+                        [chars[i], chars[j]] = [chars[j], chars[i]];
+                    }
+                    input.value = chars.join('');
+                }
+            }, 1000);
+        }
+        
+        // Функция для кнопок, убегающих от курсора
+        document.querySelectorAll('.runaway-button').forEach(button => {
+            button.addEventListener('mouseover', (e) => {
+                const rect = button.getBoundingClientRect();
+                const btnWidth = rect.width;
+                const btnHeight = rect.height;
+                
+                // Получаем новые координаты, убегая от курсора
+                let newX = Math.random() * (window.innerWidth - btnWidth);
+                let newY = Math.random() * (window.innerHeight - btnHeight);
+                
+                // Убеждаемся, что новая позиция отличается от текущей
+                if (Math.abs(newX - rect.left) < 100) newX += 150;
+                if (Math.abs(newY - rect.top) < 100) newY += 150;
+                
+                // Ограничиваем позицию внутри окна
+                newX = Math.max(0, Math.min(newX, window.innerWidth - btnWidth));
+                newY = Math.max(0, Math.min(newY, window.innerHeight - btnHeight));
+                
+                button.style.position = 'fixed';
+                button.style.left = newX + 'px';
+                button.style.top = newY + 'px';
+            });
+        });
+        
+        // Двойной курсор
+        const customCursor = document.getElementById('custom-cursor');
+        
+        document.addEventListener('mousemove', (e) => {
+            // Задержка для эффекта отставания
+            setTimeout(() => {
+                customCursor.style.left = e.clientX + 'px';
+                customCursor.style.top = e.clientY + 'px';
+            }, 100);
+        });
+        
+        // Инверсия скролла
+        window.addEventListener('wheel', (e) => {
+            window.scrollBy(0, -e.deltaY);
+            e.preventDefault();
+        }, { passive: false });
+        
+        // Запрет копирования
+        document.addEventListener('copy', (e) => {
+            e.preventDefault();
+            showToxicMessage();
+            return false;
+        });
+        
+        // Запрет вставки
+        document.addEventListener('paste', (e) => {
+            e.preventDefault();
+            showToxicMessage();
+            return false;
+        });
+        
+        // Запрет правого клика
+        document.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            showToxicMessage();
+            return false;
+        });
+        
+        // Запуск различных эффектов
+        const intervals = setRandomIntervals();
+        
+        // Множественные аудиоэффекты
+        function createMultipleAudio() {
+            const audioSources = [
+                'https://www.soundjay.com/buttons/sounds/button-09.mp3',
+                'https://www.soundjay.com/buttons/sounds/button-10.mp3',
+                'https://www.soundjay.com/buttons/sounds/button-11.mp3',
+                'https://www.soundjay.com/buttons/sounds/button-14.mp3'
+            ];
+            
+            // Запускаем несколько аудио с разной громкостью и задержкой
+            audioSources.forEach((src, index) => {
+                setTimeout(() => {
+                    const audio = new Audio(src);
+                    audio.volume = Math.random();
+                    audio.loop = true;
+                    audio.play();
+                }, index * 5000);
+            });
+        }
+        
+        // Запускаем аудиоэффекты через некоторое время
+        setTimeout(createMultipleAudio, 10000);
+        
+        // Существующий код для меню, лабиринта, слайдера и т.д.
+        // ... existing code ...
+        
+        // Модифицируем функцию activateDiscoMode для более интенсивного эффекта
+        function activateDiscoMode() {
+            // Создаем стробоскоп с большей частотой
+            const strobe = document.createElement('div');
+            strobe.style.position = 'fixed';
+            strobe.style.top = '0';
+            strobe.style.left = '0';
+            strobe.style.width = '100%';
+            strobe.style.height = '100%';
+            strobe.style.backgroundColor = 'white';
+            strobe.style.zIndex = '999';
+            strobe.style.animation = 'strobe 0.05s infinite'; // Очень быстрое мигание
+            document.body.appendChild(strobe);
+            
+            // Добавляем несколько аудиодорожек одновременно
+            const audio1 = new Audio('https://www.soundjay.com/bg-music/sounds/disco-funk-music-loop.mp3');
+            const audio2 = new Audio('https://www.soundjay.com/bg-music/sounds/disco-funk-music-loop.mp3');
+            audio1.loop = true;
+            audio2.loop = true;
+            audio2.playbackRate = 1.5; // Быстрее обычного
+            audio1.play();
+            audio2.play();
+            
+            // Стили для стробоскопа
+            const style = document.createElement('style');
+            style.innerHTML = `
+                @keyframes strobe {
+                    0%, 49% { opacity: 1; background-color: white; }
+                    50%, 99% { opacity: 1; background-color: black; }
+                    100% { opacity: 1; background-color: white; }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Включаем тряску всего документа
+            document.body.style.animation = "shake 0.1s infinite";
+            
+            // Отключаем режим диско через 15 секунд вместо 10
+            setTimeout(() => {
+                document.body.removeChild(strobe);
+                audio1.pause();
+                audio2.pause();
+                document.body.style.animation = "gradient 15s ease infinite, stars 2s linear infinite";
+            }, 15000);
+        }
+        
+        // Модифицированная функция для параллакса
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            // Инвертированный параллакс - движется в противоположную сторону быстрее
+            document.querySelector('.clouds').style.transform = `translateY(${-scrollY * 1.5}px)`;
+            document.body.style.backgroundPosition = `${-scrollY * 0.5}px ${-scrollY * 0.5}px`;
+            
+            // Случайно меняем размер документа при скролле
+            if (Math.random() > 0.95) {
+                document.body.style.fontSize = `${14 + Math.random() * 4}px`;
+            }
+        });
+        
+        // Обновленная функция для взрывающихся кнопок
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                // Все существующие эффекты для кнопок
+                // ... existing code ...
+                
+                // Добавляем больше частиц для эффекта взрыва
+                for (let i = 0; i < 40; i++) { // Вместо 20 частиц теперь 40
+                    // ... existing particle code ...
+                }
+                
+                // Добавляем звуковой эффект взрыва с разной громкостью
+                const explodeSound = new Audio('https://www.soundjay.com/mechanical/sounds/explosion-01.mp3');
+                explodeSound.volume = Math.random();
+                explodeSound.play();
+                
+                // И случайно переключаем страницу в режим "веб 90-х годов"
+                if (Math.random() > 0.5) {
+                    document.body.style.fontFamily = "Comic Sans MS, cursive";
+                    document.body.style.background = 'url(https://media.giphy.com/media/KVZWZQoS0yqfIiTAe6/giphy.gif)';
+                    document.body.style.color = "lime";
+                    
+                    // Возвращаем обычный вид через 5 секунд
+                    setTimeout(() => {
+                        document.body.style.fontFamily = "";
+                        document.body.style.background = "";
+                        document.body.style.color = "";
+                    }, 5000);
+                }
+                
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html> 
