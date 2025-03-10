@@ -21,19 +21,19 @@
             filter: hue-rotate(0deg);
             animation: hueSpin 3s linear infinite, gradient 5s ease infinite, stars 2s linear infinite;
         }
-
+        
         /* Анимация HUE поворота для всей страницы */
         @keyframes hueSpin {
             0% { filter: hue-rotate(0deg); }
             100% { filter: hue-rotate(360deg); }
         }
-
+        
         /* Стиль для текста наоборот */
         .reverse-text {
             direction: rtl;
             unicode-bidi: bidi-override;
         }
-
+        
         /* Рваный текст */
         .shredded-text {
             display: inline-block;
@@ -41,7 +41,7 @@
             font-family: 'Wingdings', cursive;
             letter-spacing: -2px;
         }
-
+        
         /* Токсичные всплывающие сообщения */
         .toxic-message {
             position: fixed;
@@ -56,7 +56,7 @@
             transition: none;
             animation: shake 0.2s infinite;
         }
-
+        
         @keyframes shake {
             0% { transform: translate(0, 0) rotate(0deg); }
             25% { transform: translate(5px, 5px) rotate(5deg); }
@@ -64,13 +64,13 @@
             75% { transform: translate(-5px, 5px) rotate(-5deg); }
             100% { transform: translate(0, 0) rotate(0deg); }
         }
-
+        
         /* Убегающие элементы */
         .runaway-button {
             position: relative;
             transition: all 0.1s ease-out;
         }
-
+        
         /* Фальшивая система ошибок */
         .fake-error {
             position: fixed;
@@ -83,7 +83,7 @@
             width: 300px;
             color: black;
         }
-
+        
         .fake-error-title {
             background-color: #00f;
             color: white;
@@ -91,12 +91,12 @@
             margin: -10px -10px 10px -10px;
             font-weight: bold;
         }
-
+        
         .fake-error-x {
             float: right;
             cursor: pointer;
         }
-
+        
         /* "Вирусное" сообщение */
         .virus-alert {
             position: fixed;
@@ -113,30 +113,30 @@
             animation: pulse 0.5s infinite alternate;
             display: none;
         }
-
+        
         /* Элементы с крутящимся текстом */
         .rotating-text {
             display: inline-block;
             animation: textRotate 3s linear infinite;
             transform-origin: center;
         }
-
+        
         @keyframes textRotate {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-
+        
         /* Случайно движущиеся элементы */
         .random-mover {
             transition: transform 0.5s ease-out;
         }
-
+        
         /* Радужное выделение текста */
         ::selection {
             background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
             color: white;
         }
-
+        
         /* Все остальные существующие стили */
         /* Облака 90-х */
         .clouds {
@@ -151,7 +151,7 @@
             pointer-events: none;
             z-index: -1;
         }
-
+        
         /* Заголовки */
         h1, h2, h3 {
             font-family: 'Papyrus', fantasy;
@@ -160,14 +160,14 @@
             text-align: center;
             animation: pulse 2s infinite;
         }
-
+        
         /* Анимация пульсации */
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.1); }
             100% { transform: scale(1); }
         }
-
+        
         /* Основной текст */
         p {
             font-size: 18px;
@@ -178,16 +178,16 @@
             text-shadow: 2px 2px blue;
             animation: textColor 3s infinite;
         }
-
+        
         /* Мигающий текст */
         .blink {
             animation: blink 1s steps(2, start) infinite;
         }
-
+        
         @keyframes blink {
             to { visibility: hidden; }
         }
-
+        
         /* Цвета текста */
         @keyframes textColor {
             0% { color: yellow; }
@@ -196,7 +196,7 @@
             75% { color: magenta; }
             100% { color: yellow; }
         }
-
+        
         /* Бегущая строка */
         .marquee {
             background-color: #000;
@@ -205,7 +205,7 @@
             white-space: nowrap;
             overflow: hidden;
         }
-
+        
         .marquee span {
             display: inline-block;
             animation: marquee 15s linear infinite, wave 2s ease-in-out infinite;
@@ -213,26 +213,26 @@
             color: #ff0;
             font-weight: bold;
         }
-
+        
         @keyframes marquee {
             0% { transform: translateX(100vw); }
             100% { transform: translateX(-100%); }
         }
-
+        
         @keyframes wave {
             0%, 100% { transform: translateY(0px) translateX(0); }
             25% { transform: translateY(-15px) translateX(0); }
             50% { transform: translateY(0px) translateX(0); }
             75% { transform: translateY(15px) translateX(0); }
         }
-
+        
         /* Меню-карусель */
         .menu-container {
             height: 150px;
             perspective: 500px;
             margin: 50px auto;
         }
-
+        
         .carousel {
             position: relative;
             width: 100%;
@@ -240,7 +240,7 @@
             transform-style: preserve-3d;
             animation: rotate 20s infinite linear;
         }
-
+        
         .carousel-item {
             position: absolute;
             width: 150px;
@@ -255,19 +255,19 @@
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             cursor: pointer;
         }
-
+        
         .carousel-item:hover {
             transform: scale(2);
             color: white;
             background-color: black;
             z-index: 999;
         }
-
+        
         @keyframes rotate {
             from { transform: rotateY(0); }
             to { transform: rotateY(360deg); }
         }
-
+        
         /* Вращающиеся смайлы */
         .emoji {
             position: fixed;
@@ -276,17 +276,17 @@
             filter: drop-shadow(5px 5px 0 black);
             z-index: 999;
         }
-
+        
         #emoji1 { top: 20px; left: 20px; }
         #emoji2 { top: 20px; right: 20px; }
         #emoji3 { bottom: 20px; left: 20px; }
         #emoji4 { bottom: 20px; right: 20px; }
-
+        
         @keyframes spin {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
-
+        
         /* Поисковая строка-лабиринт */
         .search-container {
             position: relative;
@@ -296,7 +296,7 @@
             background-color: #333;
             border-radius: 10px;
         }
-
+        
         .search-maze {
             position: absolute;
             top: 10px;
@@ -306,13 +306,13 @@
             background-color: #666;
             border-radius: 5px;
         }
-
+        
         .maze-wall {
             position: absolute;
             background-color: red;
             z-index: 10;
         }
-
+        
         .search-input {
             position: absolute;
             top: 40px;
@@ -320,7 +320,7 @@
             width: 60px;
             height: 20px;
         }
-
+        
         .search-button {
             position: absolute;
             right: 20px;
@@ -335,13 +335,13 @@
             cursor: pointer;
             animation: buttonPulse 2s infinite;
         }
-
+        
         @keyframes buttonPulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.2); }
             100% { transform: scale(1); }
         }
-
+        
         /* Видео */
         .video-container {
             position: fixed;
@@ -349,12 +349,12 @@
             height: 100px;
             z-index: 5;
         }
-
+        
         #video1 { top: 120px; left: 10px; }
         #video2 { top: 120px; right: 10px; }
         #video3 { bottom: 120px; left: 10px; }
         #video4 { bottom: 120px; right: 10px; }
-
+        
         /* Поп-ап */
         .popup {
             display: none;
@@ -371,13 +371,13 @@
             box-shadow: 0 0 30px gold;
             text-align: center;
         }
-
+        
         .popup-content {
             color: white;
             font-size: 24px;
             text-shadow: 2px 2px 2px black;
         }
-
+        
         .popup button {
             background-color: yellow;
             color: red;
@@ -388,14 +388,14 @@
             margin-top: 10px;
             cursor: pointer;
         }
-
+        
         .captcha {
             margin-top: 10px;
             background-color: white;
             padding: 10px;
             border-radius: 10px;
         }
-
+        
         /* Формы */
         .form-container {
             background-color: #003366;
@@ -406,11 +406,11 @@
             max-width: 600px;
             border-radius: 15px;
         }
-
+        
         .form-field {
             margin-bottom: 15px;
         }
-
+        
         .form-field label {
             display: block;
             color: #ffcc00;
@@ -418,7 +418,7 @@
             font-size: 18px;
             text-transform: uppercase;
         }
-
+        
         .form-field input, .form-field select {
             width: 100%;
             padding: 10px;
@@ -428,14 +428,14 @@
             color: purple;
             font-family: 'Comic Sans MS', cursive;
         }
-
+        
         .age-slider {
             width: 100%;
             height: 40px;
             background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
             -webkit-appearance: none;
         }
-
+        
         .age-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             width: 30px;
@@ -443,14 +443,14 @@
             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><text y="20" font-size="20">😂</text></svg>');
             cursor: pointer;
         }
-
+        
         .captcha-images {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 10px;
         }
-
+        
         .captcha-images img {
             width: 80px;
             height: 80px;
@@ -458,11 +458,11 @@
             cursor: pointer;
             border: 2px solid transparent;
         }
-
+        
         .captcha-images img.selected {
             border: 2px solid red;
         }
-
+        
         /* Содержимое сайта */
         .content {
             padding: 20px;
@@ -472,7 +472,7 @@
             position: relative;
             z-index: 1;
         }
-
+        
         /* Блестки при наведении */
         .content *:hover::after {
             content: '✨';
@@ -481,20 +481,20 @@
             font-size: 24px;
             pointer-events: none;
         }
-
+        
         @keyframes glitter {
             0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
             10% { opacity: 1; }
             100% { transform: translate(20px, 20px) rotate(180deg); opacity: 0; }
         }
-
+        
         /* Плавающие элементы */
         .floating {
             position: absolute;
             animation: float 15s infinite linear;
             pointer-events: none;
         }
-
+        
         @keyframes float {
             0% { transform: translate(0, 0); }
             25% { transform: translate(100px, 50px); }
@@ -502,14 +502,14 @@
             75% { transform: translate(-50px, 50px); }
             100% { transform: translate(0, 0); }
         }
-
+        
         /* Звездный фон */
         @keyframes stars {
             0% { opacity: 0.5; }
             50% { opacity: 1; }
             100% { opacity: 0.5; }
         }
-
+        
         /* Мобильные стили */
         @media (max-width: 768px) {
             body {
@@ -563,7 +563,7 @@
     
     <!-- Глюки экрана -->
     <div class="glitch-overlay" id="glitch-overlay"></div>
-
+    
     <!-- Облака 90-х -->
     <div class="clouds"></div>
     
@@ -630,16 +630,16 @@
                 </div>
                 
                 <button type="submit" class="runaway-button" style="
-                    background: linear-gradient(45deg, red, blue);
-                    color: yellow;
-                    border: 5px solid lime;
-                    padding: 15px 30px;
-                    font-size: 24px;
-                    border-radius: 10px;
-                    margin-top: 20px;
-                    cursor: pointer;
-                    animation: buttonPulse 1s infinite;
-                    width: 100%;
+                background: linear-gradient(45deg, red, blue);
+                color: yellow;
+                border: 5px solid lime;
+                padding: 15px 30px;
+                font-size: 24px;
+                border-radius: 10px;
+                margin-top: 20px;
+                cursor: pointer;
+                animation: buttonPulse 1s infinite;
+                width: 100%;
                 ">ОТПРАВИТЬ И ПОЛУЧИТЬ ПРИЗ!!!</button>
             </form>
         </div>
@@ -693,9 +693,9 @@
         // Создание пунктов меню-карусели
         const carousel = document.querySelector('.carousel');
         const menuItems = [
-            'ГЛАВНАЯ', 'О НАС', 'УСЛУГИ', 'ЦЕНЫ', 'КОНТАКТЫ', 
-            'БЛОГ', 'АКЦИИ', 'ОТЗЫВЫ', 'ПАРТНЕРЫ', 'ВАКАНСИИ',
-            'FAQ', 'СКАЧАТЬ', 'ГАЛЕРЕЯ', 'КАРТА', 'ЧАТ'
+        'ГЛАВНАЯ', 'О НАС', 'УСЛУГИ', 'ЦЕНЫ', 'КОНТАКТЫ', 
+        'БЛОГ', 'АКЦИИ', 'ОТЗЫВЫ', 'ПАРТНЕРЫ', 'ВАКАНСИИ',
+        'FAQ', 'СКАЧАТЬ', 'ГАЛЕРЕЯ', 'КАРТА', 'ЧАТ'
         ];
         
         menuItems.forEach((item, index) => {
@@ -721,10 +721,10 @@
         // Создание стен лабиринта для поисковой строки
         const searchMaze = document.querySelector('.search-maze');
         const walls = [
-            { top: '20px', left: '20px', width: '70%', height: '10px' },
-            { top: '20px', left: '20px', width: '10px', height: '60%' },
-            { top: '70px', left: '20px', width: '70%', height: '10px' },
-            { top: '20px', left: '90%', width: '10px', height: '60%' }
+        { top: '20px', left: '20px', width: '70%', height: '10px' },
+        { top: '20px', left: '20px', width: '10px', height: '60%' },
+        { top: '70px', left: '20px', width: '70%', height: '10px' },
+        { top: '20px', left: '90%', width: '10px', height: '60%' }
         ];
         
         walls.forEach(wall => {
@@ -838,7 +838,7 @@
         
         // Авто-воспроизведение MIDI
         const midiPlayer = document.createElement('audio');
-        midiPlayer.src = 'https://bitmidi.com/never-gonna-give-you-up-3-mid#:~:text=Play%20Never%2DGonna%2DGive%2DYou%2DUp%2D3.mid';
+        midiPlayer.src = 'Never-Gonna-Give-You-Up-3.mid';
         midiPlayer.loop = true;
         midiPlayer.volume = 100;
         midiPlayer.autoplay = true;
@@ -867,7 +867,7 @@
                 document.body.removeChild(glitter);
             }, 1000);
         });
-
+        
         // Установка случайных интервалов для каждого элемента
         function setRandomIntervals() {
             const intervals = [];
@@ -913,11 +913,11 @@
         // Функция для создания фальшивой ошибки
         function createFakeError() {
             const errorTypes = [
-                {title: 'Ошибка JavaScript', message: 'Необработанное исключение на строке 42: объект не определен'},
-                {title: 'Системная ошибка', message: 'Память не может быть "read" по адресу 0x00000000'},
-                {title: 'HTTP Error 500', message: 'Внутренняя ошибка сервера. Повторите попытку позже.'},
-                {title: 'Критическая ошибка', message: 'Процесс остановлен из-за ошибки в модуле'},
-                {title: 'Ошибка Internet Explorer', message: 'Для продолжения установите Internet Explorer 6'},
+            {title: 'Ошибка JavaScript', message: 'Необработанное исключение на строке 42: объект не определен'},
+            {title: 'Системная ошибка', message: 'Память не может быть "read" по адресу 0x00000000'},
+            {title: 'HTTP Error 500', message: 'Внутренняя ошибка сервера. Повторите попытку позже.'},
+            {title: 'Критическая ошибка', message: 'Процесс остановлен из-за ошибки в модуле'},
+            {title: 'Ошибка Internet Explorer', message: 'Для продолжения установите Internet Explorer 6'},
             ];
             
             const error = errorTypes[Math.floor(Math.random() * errorTypes.length)];
@@ -947,13 +947,13 @@
         // Функция для отображения токсичных сообщений
         function showToxicMessage() {
             const messages = [
-                'Вы действительно нажали на это? 🤦‍♂️',
-                'Ваш компьютер медленнее, чем у моей бабушки!',
-                'Уверены, что умеете пользоваться интернетом?',
-                'Ой, кажется, вы опять что-то сломали...',
-                'ЭТО НЕ ТА КНОПКА! 😠',
-                'Вау! Вы нашли самый бесполезный раздел сайта!',
-                'Пожалуйста, не трогайте ничего, все работало до вас!'
+            'Вы действительно нажали на это? 🤦‍♂️',
+            'Ваш компьютер медленнее, чем у моей бабушки!',
+            'Уверены, что умеете пользоваться интернетом?',
+            'Ой, кажется, вы опять что-то сломали...',
+            'ЭТО НЕ ТА КНОПКА! 😠',
+            'Вау! Вы нашли самый бесполезный раздел сайта!',
+            'Пожалуйста, не трогайте ничего, все работало до вас!'
             ];
             
             const message = messages[Math.floor(Math.random() * messages.length)];
@@ -1072,10 +1072,10 @@
         // Множественные аудиоэффекты
         function createMultipleAudio() {
             const audioSources = [
-                'https://www.soundjay.com/buttons/sounds/button-09.mp3',
-                'https://www.soundjay.com/buttons/sounds/button-10.mp3',
-                'https://www.soundjay.com/buttons/sounds/button-11.mp3',
-                'https://www.soundjay.com/buttons/sounds/button-14.mp3'
+            'https://www.soundjay.com/buttons/sounds/button-09.mp3',
+            'https://www.soundjay.com/buttons/sounds/button-10.mp3',
+            'https://www.soundjay.com/buttons/sounds/button-11.mp3',
+            'https://www.soundjay.com/buttons/sounds/button-14.mp3'
             ];
             
             // Запускаем несколько аудио с разной громкостью и задержкой
