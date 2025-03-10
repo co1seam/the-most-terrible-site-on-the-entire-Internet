@@ -7,7 +7,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&family=Papyrus&display=swap');
         
-        /* Основные стили */
         body {
             margin: 0;
             padding: 0;
@@ -22,13 +21,11 @@
             animation: hueSpin 3s linear infinite, gradient 5s ease infinite, stars 2s linear infinite;
         }
         
-        /* Анимация HUE поворота для всей страницы */
         @keyframes hueSpin {
             0% { filter: hue-rotate(0deg); }
             100% { filter: hue-rotate(360deg); }
         }
-        
-        /* Стиль для текста наоборот */
+
         .reverse-text {
             direction: rtl;
             unicode-bidi: bidi-override;
